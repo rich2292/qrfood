@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class chartModel {
+    //kmk
     private PieChart chart;
     private float user,total,percent;
     DecimalFormat df;
