@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_homePage"
+        android:icon="@drawable/home"
+        android:title="首頁" />
+    <item
+        android:id="@+id/navigation_fooddiary"
+        android:icon="@drawable/menu"
+        android:title="食物檔案" />
+    <item
+        android:id="@+id/navigation_qrcode"
+        android:icon="@drawable/qrcode"
+        android:title="@string/QRCode" />
+    <item
+        android:id="@+id/navigation_post"
+        android:icon="@drawable/post"
+        android:title="貼文" />
+    <item
+        android:id="@+id/navigation_user"
+        android:icon="@drawable/user"
+        android:title="會員中心" />
+</menu>

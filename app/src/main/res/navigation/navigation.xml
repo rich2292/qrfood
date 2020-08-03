@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/navigation_homePage">
+    <fragment
+        android:id="@+id/navigation_homePage"
+        android:name="com.example.qrfoodproject.fragment.HomePage_frag"
+        android:label="fragment_home_page_frag"
+        tools:layout="@layout/fragment_home_page_frag" />
+    <fragment
+        android:id="@+id/foodFile_res_Fragment"
+        android:name="com.example.qrfoodproject.FoodFile.restaurant.FoodFile_res_Fragment"
+        android:label="FoodFile_res_Fragment" />
+    <activity
+        android:id="@+id/navigation_qrcode"
+        android:name="com.example.qrfoodproject.Qrcode.ScanQrcode"
+        android:label="ScanQrcode" />
+    <activity
+        android:id="@+id/navigation_user"
+        android:name="com.example.qrfoodproject.Profile.profile_select"
+        android:label="profile_select" />
+</navigation>

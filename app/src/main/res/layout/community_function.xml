@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#72A556">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/community_function"
+                android:layout_width="match_parent"
+                android:layout_height="87dp"
+                android:background="#536e33"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="發佈貼文"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="70px"
+                android:textStyle="bold"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E6E6E6"
+                android:inputType="text"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="  標題："
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="60px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/writing"
+                android:layout_width="match_parent"
+                android:layout_height="288dp"
+                android:background="#F4F4F4"
+                android:hint="  寫點什麼..."
+                android:paddingTop="10dp"
+                android:textSize="60px" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/community_picture"
+                    android:layout_width="155dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#F4F4F4"
+                    android:drawableLeft="@drawable/community_picture"
+                    android:paddingLeft="15dp"
+                    android:text="    插入圖片"
+                    android:textAlignment="textStart"
+                    android:textSize="60px" />
+
+                <Button
+                    android:id="@+id/community_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#F4F4F4"
+                    android:drawableLeft="@drawable/community_camera"
+                    android:text="    拍攝圖片"
+                    android:textAlignment="textStart"
+                    android:textSize="60px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#E6E6E6"
+                    android:inputType="textUri"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="  地點："
+                    android:textColor="#000000"
+                    android:textSize="60px"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"
+                    android:orientation="vertical"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/button5"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/fooddairy_button_shape"
+                        android:gravity="center"
+                        android:text="送出"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
